@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="col-md-4">
+    <div class="card card-body p-4 rounded-0 bg-secundario text-white">
+      <h2 class="text-center text-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="currentColor"
+          class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+          <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          <path fill-rule="evenodd"
+            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+        </svg> ALUMNOS
+      </h2>
+      <form action="/alumnos/agregar" method="POST">
+        <h4>
+          <div>
+            <label for="nombre" class="text-dark">Nombre(s):</label>
+            <input type="text" name="nombre" placeholder="Name" id="nombre" class="form-control bg-white text-dark" />
+          </div>
+          <br />
+          <div>
+            <label for="paterno" class="text-dark">Apellido Paterno:</label>
+            <input type="text" name="paterno" placeholder="Last Name" id="paterno"
+              class="form-control bg-white text-dark" />
+          </div>
+          <br />
+          <div>
+            <label for="materno" class="text-dark">Apellido Materno:</label>
+            <input type="text" name="materno" placeholder="Mother`s Last Name" id="materno"
+              class="form-control bg-white text-dark" />
+          </div>
+          <br />
+
+          <div>
+            <label for="fechaNac" class="text-dark">Fecha de Nacimiento:</label>
+            <input type="Date" name="fechaNac" placeholder="Birthdate" id="fechaNac"
+              class="form-control bg-white text-dark" />
+          </div>
+          <br />
+          <div>
+            <label for="sexo" class="text-dark">Sexo:</label>
+            <input type="text" name="sexo" placeholder="Sex" id="sexo" class="form-control bg-white text-dark" />
+          </div>
+          <br />
+          <div>
+            <label for="celular" class="text-dark">Número de Teléfono:</label>
+            <input type="text" name="celular" placeholder="Phone Number" id="celular"
+              class="form-control bg-white text-dark" />
+          </div>
+          <br />
+          <div>
+            <label for="direccion" class="text-dark">Dirección:</label>
+            <input type="text" name="direccion" placeholder="Adress" id="direccion"
+              class="form-control bg-white text-dark" />
+          </div>
+          <br>
+          <div class="text-center">
+            <button class="btn ov-btn-grow-ellipse1">Add
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+              </svg>
+            </button>
+            <a class="btn ov-btn-grow-ellipse2" href="/" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+              </svg>
+            </a>
+          </div>
+
+        </h4>
+      </form>
+    </div>
+  </div>
+</div>
